@@ -1,0 +1,68 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/tab1"
+    tools:context="com.example.halfm_1.tabbedview.tab1">
+
+    <EditText
+        android:layout_width="240dp"
+        android:layout_height="45dp"
+        android:id="@+id/editText"
+        android:layout_alignParentTop="true"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:background="#bb616c5b"
+        android:inputType="text|textAutoComplete|textAutoCorrect|textShortMessage"/>
+
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="380dp"
+        android:fillViewport="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:id="@+id/scrollView"
+        android:isScrollContainer="false"
+        android:windowSoftInputMode="adjustPan">
+
+
+
+        <TableLayout
+
+
+            android:layout_width="fill_parent"
+
+            android:layout_height="wrap_content"
+            android:stretchColumns="1,2,3"
+            android:weightSum="1"
+
+            android:id="@+id/contact"
+
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:layout_below="@+id/searchView"
+            android:layout_alignParentBottom="true">
+
+
+
+        </TableLayout>
+
+    </ScrollView>
+
+    <Button
+        android:layout_width="fill_parent"
+        android:layout_height="46dp"
+        android:text="Search"
+        android:id="@+id/new_btn"
+        android:background="#bb556c56"
+        android:textColor="@android:color/white"
+        android:layout_alignParentTop="true"
+        android:layout_toRightOf="@+id/editText"
+        android:layout_toEndOf="@+id/editText"
+        android:layout_alignBottom="@+id/editText" />
+
+
+
+
+</RelativeLayout>
